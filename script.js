@@ -1,7 +1,6 @@
 async function generateLetter() {
     const name = document.getElementById("name").value || "Mere Mitr";
     const mood = document.getElementById("mood").value;
-    q k mere pass power hai to mai project destroy kar dunga
     const senderName = "Programmer_AD"; // Sender name
     const apiKey = "AIzaSyCm39M8zTTYKS_WVsWYrKa0Ikgq54ElSA4"; // Replace with a valid API key
 
