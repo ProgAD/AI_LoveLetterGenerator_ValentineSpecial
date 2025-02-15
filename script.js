@@ -64,8 +64,8 @@ async function generateLetter() {
 
         // Extract AI-generated text
         let generatedText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "AI couldn't generate a message. Try again!";
-        
-        document.getElementById("letter").innerHTML = generatedText;
+        const formattedText = generatedText.replace(/\n/g, "<br>");
+        document.getElementById("letter").innerHTML = formattedText;
     } catch (error) {
         console.error("Error:", error);
         document.getElementById("letter").innerHTML = "⚠️ Error fetching response. Check API key or try again later.";
